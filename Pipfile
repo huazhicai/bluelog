@@ -16,6 +16,10 @@ flask-wtf = "*"
 flask-debugtoolbar = "*"
 flask-migrate = "*"
 faker = "*"
+flask-babel = "*"
+flask-bootstrap = "*"
+pymysql = "*"
+gunicorn = "*"
 
 [dev-packages]
 

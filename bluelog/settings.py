@@ -36,6 +36,7 @@ class BaseConfig(object):
 
 
 class DevelopmentConfig(BaseConfig):
+    BABEL_DEFAULT_LOCAL = 'zh_Hans_CN'
     SQLALCHEMY_DATABASE_URI = prefix + os.path.join(basedir, 'data-dev.db')
 
 
@@ -46,6 +47,7 @@ class TestingConfig(BaseConfig):
 
 
 class ProductionConfig(BaseConfig):
+    BABEL_DEFAULT_LOCAL='zh'
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', prefix + os.path.join(basedir, 'data.db'))
 
 

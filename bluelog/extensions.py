@@ -7,6 +7,7 @@ from flask_migrate import Migrate
 from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
+from flask_babel import Babel
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
@@ -17,6 +18,7 @@ mail = Mail()
 moment = Moment()
 toolbar = DebugToolbarExtension()
 migrate = Migrate()
+babel = Babel()
 
 
 @login_manager.user_loader
